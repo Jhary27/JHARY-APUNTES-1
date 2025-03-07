@@ -1,18 +1,29 @@
-# Titulo de la clase 
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# TRANFOMADA DE LA PLACE 
+La Transformada de Laplace es una herramienta matemática que convierte una función en el dominio del tiempo F(t) en una función en el dominio de la frecuencia
+## 1. Sistema 
+Un sistema es una combinación de componentes que actúan conjuntamente para alcanzar un objetivo específico. La combinación de componentes se puede representar por medio de reglas o principios que relacionan salidas con las entradas
 
-## 2. Definiciones
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
+## 2. sistema dinamico 
+•Un sistema se llama dinámico si su salida en el presente depende de una entrada en el pasado
+• Si su salida en curso depende solamente de la entrada en curso, el sistema se conoce como estático.
+## 3.PLANTA 
+Es todo lo físico que permite que se lleve a cabo un proceso Puede ser representado matemáticamente 
+Puede ser representado a través de uno o varios sistemas
+### 3.1. PROCESO 
+• Es la secuencia de pasos que permite el desarrollo, o fabricación de un objetivo o producto
+• En el área de control se usa como sinónimo de planta
+(Aunque en sentido estricto no lo son)
 
-## 3. Subsecciones
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
-### 3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
+### 3.2.Modelos dinámicos
+En control interesa obtener un modelo matemático que relacione las variables de interés con el tiempo
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=𝑓(𝑡)"><img src="http://www.alciro.org/cgi/tex.cgi?𝑓(𝑡)" title="𝑓(𝑡)" border="0" /></a>
+Hay cambios de la variable con respecto al tiempo  
+Es necesario cuantificar cuanto cambia las variables de
+interés con respecto al tiempo
+
+### 3.3. Recordando cálculo diferencial
+Definición de la derivada
+![Texto alternativo](C:\Users\Usuario\Pictures\Captura.PNG)
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
