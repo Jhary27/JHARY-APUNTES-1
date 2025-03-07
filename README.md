@@ -100,4 +100,50 @@ Se aplica la transformada inversa de Laplace a la función de transferencia para
 ## 2. caso 1 Raíces reales diferentes
 Si la función de transferencia F(s) tiene raíces reales diferentes, es decir:
 <a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=F(s) = (s - r_{1})(s - r_{2})(s - r_{1})"><img src="http://www.alciro.org/cgi/tex.cgi?F(s) = (s - r_{1})(s - r_{2})(s - r_{1})" title="F(s) = (s - r_{1})(s - r_{2})(s - r_{1})" border="0" /></a>
-![Texto alternativo](https://static.eduboom.es/eduboom_es/uploads/vidimgs/07062021-Raices-de-numeros-reales-Radicales.jpg)
+donde r₁, r₂, ..., rₙ son raíces reales diferentes, entonces la transformada inversa de Laplace es:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=f(t) = \sum [A_{i} e^{rit}]"><img src="http://www.alciro.org/cgi/tex.cgi?f(t) = \sum [A_{i} e^{rit}]" title="f(t) = \sum [A_{i} e^{rit}]" border="0" /></a>
+
+donde Aᵢ son constantes que se determinan a partir de las condiciones iniciales.
+Fórmula para calcular las constantes Aᵢ
+Las constantes Aᵢ se pueden calcular utilizando la siguiente fórmula:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=A_{i} =  lim(\theta-r_{i} ) [(s - r_{i})F(s)]
+"><img src="http://www.alciro.org/cgi/tex.cgi?A_{i} =  lim(\theta-r_{i} ) [(s - r_{i})F(s)]
+" title="A_{i} =  lim(\theta-r_{i} ) [(s - r_{i})F(s)]
+" border="0" /></a>
+
+## 3.Caso 2: Raíces reales iguales
+Si la función de transferencia F(s) tiene raíces reales iguales, es decir:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=F(s) = (s - r)^{n}
+"><img src="http://www.alciro.org/cgi/tex.cgi?F(s) = (s - r)^{n}
+" title="F(s) = (s - r)^{n}
+" border="0" /></a>
+donde r es la raíz real y n es el orden de la raíz, entonces la transformada inversa de Laplace es:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=f(t) = \sum [A_{i} ^{t}(n-1-i)^{e}(rt)]
+"><img src="http://www.alciro.org/cgi/tex.cgi?f(t) = \sum [A_{i} ^{t}(n-1-i)^{e}(rt)]
+" title="f(t) = \sum [A_{i} ^{t}(n-1-i)^{e}(rt)]
+" border="0" /></a>
+## 4. Caso 3: Raíces complejas conjugadas
+Si la función de transferencia F(s) tiene raíces complejas conjugadas, es decir:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=F(s) = (s - (a + jb))(s - (a - jb))
+"><img src="http://www.alciro.org/cgi/tex.cgi?F(s) = (s - (a + jb))(s - (a - jb))
+" title="F(s) = (s - (a + jb))(s - (a - jb))
+" border="0" /></a>
+donde a y b son números reales y j es la unidad imaginaria, entonces la transformada inversa de Laplace es:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=f(t) = 2e^{at} \times  (A \times  cos(bt) + B \times sin(bt))
+"><img src="http://www.alciro.org/cgi/tex.cgi?f(t) = 2e^{at} \times  (A \times  cos(bt) + B \times sin(bt))
+" title="f(t) = 2e^{at} \times  (A \times  cos(bt) + B \times sin(bt))
+" border="0" /></a>
+donde A y B son constantes que se determinan a partir de las condiciones iniciales.
+![Texto alternativo](https://image.slidesharecdn.com/edcoeficientesconstantes-120406003822-phpapp01/85/E-D-H-Coeficientes-Constantes-5-320.jpg)
+
+## 5. Fracciones parciales en Matlab
+• Matlab puede calcular los términos de las fracciones parciales conociendo los polinomios del numerador y denominador de la función en el dominio s
+![Texto alternativo](https://d20ohkaloyme4g.cloudfront.net/img/document_thumbnails/46b3edf21b8898d876ed911846bdd5ff/thumb_1200_1553.png)
+
+## 6. Transformada de Laplace en Matlab
+![Texto alternativo](https://i.ytimg.com/vi/wHQs7AXb1VU/hqdefault.jpg)
+
+## 7.Solución de ecuaciones diferenciales conMatlab/Simulink
+![Texto alternativo](https://i.ytimg.com/vi/WQjgMxFmuqE/maxresdefault.jpg)
+![Texto alternativo]([ruta/de/la/imagen.png](https://i.ytimg.com/vi/xUfdeQDmHxw/hqdefault.jpg))
+![Texto alternativo](https://www.monografias.com/trabajos-pdf/ecuaciones-usando-matlab/image008.png)
