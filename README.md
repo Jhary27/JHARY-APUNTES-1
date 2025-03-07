@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e5e26f43-4d9a-48b7-9bab-9a3f8f2df473)# TRANFOMADA DE LA PLACE 
+# TRANFOMADA DE LA PLACE 
 La Transformada de Laplace es una herramienta matemática que convierte una función en el dominio del tiempo F(t) en una función en el dominio de la frecuencia
 ## 1. Sistema 
 Un sistema es una combinación de componentes que actúan conjuntamente para alcanzar un objetivo específico. La combinación de componentes se puede representar por medio de reglas o principios que relacionan salidas con las entradas
@@ -63,4 +63,42 @@ La Transformada de Laplace es una herramienta matemática fundamental en el aná
 Por otro lado, la Transformada Inversa de Laplace permite regresar del dominio des sal dominio del tiempo𝑎 recuperando la función original. Esto es esencial para interpretar soluciones en términos físicos y prácticos, especialmente en la respuesta temporal de sistemas.
 
 
+# Cálculo de Transformada inversa
+El cálculo de la transformada inversa de Laplace es el proceso de encontrar la función original en el dominio del tiempo, , a partir de su representación en el dominio de Laplace
 
+## 1. Transformada inversa
+• Si las funciones son simples utilizar la tabla de transformadas
+• Si las funciones son una combinación o una composición de varias funciones
+• Calcular la integral de la definición de la transformada inversa de LaPlace
+• Realizar una expansión en fracciones parciales para obtener una suma de funciones mucho más simples que se puedan encontrar en las tablas de transformadas
+
+## 2. Descomposición en fracciones parciales
+![Texto alternativo](https://0.academia-photos.com/attachment_thumbnails/37215891/mini_magick20190304-8768-2no8y8.png?1551735051)
+
+## 3. Descomposicion en fracciones parciales
+![Texto alternativo](https://study.com/cimages/multimages/16/eparfra1a.png)
+
+# 4. Ejemplo 
+![Texto alternativo](https://slideplayer.es/slide/12201957/72/images/6/Descomposici%C3%B3n+en+fracciones+parciales.jpg)
+![Texto alternativo](https://slideplayer.es/slide/12201957/72/images/8/Descomposici%C3%B3n+en+fracciones+parciales.jpg)
+
+
+#  Solución ecuaciones diferenciales
+Una ecuación diferencial es una ecuación que relaciona una función desconocida con sus derivadas. La solución de una ecuación diferencial es la función que satisface la ecuación.
+En otras palabras, una ecuación diferencial es una ecuación que describe cómo cambia una cantidad con respecto a otra variable, y la solución es la función que describe la relación entre esas variables.
+
+## 1. Transformada inversa (Método resumido)
+Paso 1: Aplicar la transformada de Laplace
+Se aplica la transformada de Laplace a la ecuación diferencial para obtener una ecuación algebraica en el dominio de la frecuencia.
+
+Paso 2: Resolver la ecuación algebraica
+Se resuelve la ecuación algebraica en el dominio de la frecuencia para obtener la función de transferencia.
+
+Paso 3: Aplicar la transformada inversa de Laplace
+Se aplica la transformada inversa de Laplace a la función de transferencia para obtener la solución en el dominio del tiempo.
+
+## 2. caso 1 Raíces reales diferentes
+Si la función de transferencia F(s) tiene raíces reales diferentes, es decir:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=F(s) = (s - r₁)(s - r₂)...(s - rₙ)"><img src="http://www.alciro.org/cgi/tex.cgi?F(s) = (s - r₁)(s - r₂)...(s - rₙ)" title="F(s) = (s - r₁)(s - r₂)...(s - rₙ)" border="0" /></a>
+
+![Texto alternativo](https://static.eduboom.es/eduboom_es/uploads/vidimgs/07062021-Raices-de-numeros-reales-Radicales.jpg)
