@@ -16,14 +16,13 @@ Puede ser representado a través de uno o varios sistemas
 
 ### 3.2.Modelos dinámicos
 En control interesa obtener un modelo matemático que relacione las variables de interés con el tiempo
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=𝑓(𝑡)"><img src="http://www.alciro.org/cgi/tex.cgi?𝑓(𝑡)" title="𝑓(𝑡)" border="0" /></a>
 Hay cambios de la variable con respecto al tiempo  
 Es necesario cuantificar cuanto cambia las variables de
 interés con respecto al tiempo
 
 ### 3.3. Recordando cálculo diferencial
 Definición de la derivada
-![Texto alternativo](C:\Users\Usuario\Pictures\Captura.PNG)
+(C:\Users\Usuario\Pictures\Captura.PNG)
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
