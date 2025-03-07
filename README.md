@@ -22,7 +22,7 @@ interés con respecto al tiempo
 
 ### 3.3. Recordando cálculo diferencial
 Definición de la derivada
-![Descripción de la imagen]([C:\Users\Usuario\Pictures\Captura.PNG](https://tse4.mm.bing.net/th?id=OIP.-LuSWG5JSTpbRCnBwK-gtQHaE2&pid=Api&P=0&h=180))
+![Descripción de la imagen]((https://tse4.mm.bing.net/th?id=OIP.-LuSWG5JSTpbRCnBwK-gtQHaE2&pid=Api&P=0&h=180))
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
