@@ -99,6 +99,5 @@ Se aplica la transformada inversa de Laplace a la función de transferencia para
 
 ## 2. caso 1 Raíces reales diferentes
 Si la función de transferencia F(s) tiene raíces reales diferentes, es decir:
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=F(s) = (s - r₁)(s - r₂)...(s - rₙ)"><img src="http://www.alciro.org/cgi/tex.cgi?F(s) = (s - r₁)(s - r₂)...(s - rₙ)" title="F(s) = (s - r₁)(s - r₂)...(s - rₙ)" border="0" /></a>
-
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=F(s) = (s - r_{1})(s - r_{2})(s - r_{1})"><img src="http://www.alciro.org/cgi/tex.cgi?F(s) = (s - r_{1})(s - r_{2})(s - r_{1})" title="F(s) = (s - r_{1})(s - r_{2})(s - r_{1})" border="0" /></a>
 ![Texto alternativo](https://static.eduboom.es/eduboom_es/uploads/vidimgs/07062021-Raices-de-numeros-reales-Radicales.jpg)
