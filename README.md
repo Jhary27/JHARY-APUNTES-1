@@ -24,6 +24,26 @@ interés con respecto al tiempo
 Definición de la derivada
 ![Texto alternativo](https://tse4.mm.bing.net/th?id=OIP.-LuSWG5JSTpbRCnBwK-gtQHaE2&pid=Api&P=0&h=180)
 
+### 3.4. Sistemas lineales y no lineales
+• Un Sistema se considera lineal cuando cumple con el principio
+de superposición
+• La respuesta de un Sistema al que se le aplican 2 o más
+excitaciones simultáneas, es la suma de las respuestas
+individuales
+• Un Sistema lineal Tambien tiene la característica de
+proporcionalidad entre la entrada y la salida
+• Los sistemas no lineales no cumplen con el principio de
+superposición
+• Los sistemas no lineales se linealizan en un punto de
+operación, en el cual se cumple el principio de superposición
+
+### 3.5. Influencia de parámetros
+![Texto alternativo](https://ecuaciondiferencialejerciciosresueltos.com/wp-content/uploads/2020/09/InterseccionIntegralesImpropias.png)
+
+### 3.6. Transformada Inversa de Laplace
+La Transformada Inversa de Laplace nos permite recuperar funciones en el dominio del tiempo a partir de su expresión en el dominio de la frecuencia. Se puede calcular con tablas, fracciones parciales o el método del residuo.
+![Texto alternativo](https://i.ytimg.com/vi/Tjsv03Lvnoc/maxresdefault.jpg)
+
 
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
