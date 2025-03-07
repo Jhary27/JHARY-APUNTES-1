@@ -1,4 +1,4 @@
-# TRANFOMADA DE LA PLACE 
+![image](https://github.com/user-attachments/assets/e5e26f43-4d9a-48b7-9bab-9a3f8f2df473)# TRANFOMADA DE LA PLACE 
 La Transformada de Laplace es una herramienta matemática que convierte una función en el dominio del tiempo F(t) en una función en el dominio de la frecuencia
 ## 1. Sistema 
 Un sistema es una combinación de componentes que actúan conjuntamente para alcanzar un objetivo específico. La combinación de componentes se puede representar por medio de reglas o principios que relacionan salidas con las entradas
@@ -47,13 +47,20 @@ La Transformada Inversa de Laplace nos permite recuperar funciones en el dominio
 
 ## 4. Ejemplo de la Transformada de Laplace
 Vamos a calcular la Transformada de Laplace de la función:
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=f ( t )=mi ^{- 2 toneladas
-}pecado ( 3 t )"><img src="http://www.alciro.org/cgi/tex.cgi?f ( t )=mi ^{- 2 toneladas
-}pecado ( 3 t )" title="f ( t )=mi ^{- 2 toneladas
-}pecado ( 3 t )" border="0" /></a>
+![Texto alternativo](http://3.bp.blogspot.com/-km_zgvgZ4LE/UYwaTwYkrrI/AAAAAAAAEaE/gNtEiCQIWto/s1600/INTEGRAL+DE+UNA+TRANSFORMADA+DE+LAPLACE+(2).gif)
 
-## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+## 5.  Ejemplo de la Transformada inversa de la place
+![Texto alternativo](https://i.ytimg.com/vi/emjeF_8393A/maxresdefault.jpg)
 
-## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+## 6. TABLA DE LA TRANSFORMADA DE LA PLACE
+![Texto alternativo](https://d20ohkaloyme4g.cloudfront.net/img/document_thumbnails/f4a69a624d915ca11b44ed307ca1bc91/thumb_1200_1553.png)
+
+## 7.TABLA DE LA TRASFORMADA INVERSA DE LA PLACE 
+![Texto alternativo](https://2.bp.blogspot.com/-KPrQWMJGu6s/WvPVoW7S_ZI/AAAAAAAACAo/CYyvXUJDFRwuObz2a_cYY9t-_hhHBBWiwCLcBGAs/s1600/Transformadas+de+Laplace+org.png)
+
+## 8. Conclusiones
+La Transformada de Laplace es una herramienta matemática fundamental en el análisis de sistemas dinámicos, ecuaciones diferenciales y circuitos eléctricos. Su principal ventaja es que convierte ecuaciones diferenciales en ecuaciones algebraicas en el dominio de𝑠 lo que facilita su resolución. Es ampliamente utilizado en ingeniería, física y matemáticas aplicadas para modelar y resolver problemas complejos.
+Por otro lado, la Transformada Inversa de Laplace permite regresar del dominio des sal dominio del tiempo𝑎 recuperando la función original. Esto es esencial para interpretar soluciones en términos físicos y prácticos, especialmente en la respuesta temporal de sistemas.
+
+
+
