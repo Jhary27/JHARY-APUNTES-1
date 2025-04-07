@@ -1,12 +1,22 @@
-# TRANFOMADA DE LA PLACE 
-La Transformada de Laplace es una herramienta matemática que convierte una función en el dominio del tiempo F(t) en una función en el dominio de la frecuencia
-## 1. Sistema 
-Un sistema es una combinación de componentes que actúan conjuntamente para alcanzar un objetivo específico. La combinación de componentes se puede representar por medio de reglas o principios que relacionan salidas con las entradas
+# Energía potencial
+• En los sistemas mecánicos la energía potencial cambia
+de acuerdo a su posición (con respecto a una referencia)
+• En los sistemas mecánicos los resortes y las masas
+almacenan energía potencial
+• La energía potencial es equivalente al trabajo realizado
+por la fuerza externa
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=u= \int_{0}^{h}mgdx= mgh"><img src="http://www.alciro.org/cgi/tex.cgi?u= \int_{0}^{h}mgdx= mgh" title="u= \int_{0}^{h}mgdx= mgh" border="0" /></a>
+## Energía cinética
+• La energía cinética es debida a la velocidad
+• Solamente los elementos de inercia pueden almacenar
+energía cinética
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=\tau \equiv \frac{1}{2}mv^{2}"><img src="http://www.alciro.org/cgi/tex.cgi?\tau \equiv \frac{1}{2}mv^{2}" title="\tau \equiv \frac{1}{2}mv^{2}" border="0" /></a>
 
-## 2. sistema dinamico 
-•Un sistema se llama dinámico si su salida en el presente depende de una entrada en el pasado
-• Si su salida en curso depende solamente de la entrada en curso, el sistema se conoce como estático.
-## 3.PLANTA 
+## Potencia
+• La realización de trabajo que varía con respecto al
+tiempo
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=potencia = p\equiv \frac{dw}{dt}"><img src="http://www.alciro.org/cgi/tex.cgi?potencia = p\equiv \frac{dw}{dt}" title="potencia = p\equiv \frac{dw}{dt}" border="0" /></a>
+## Energía potencial en un resor
 Es todo lo físico que permite que se lleve a cabo un proceso Puede ser representado matemáticamente 
 Puede ser representado a través de uno o varios sistemas
 ### 3.1. PROCESO 
