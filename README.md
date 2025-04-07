@@ -5,56 +5,95 @@ de acuerdo a su posición (con respecto a una referencia)
 almacenan energía potencial
 • La energía potencial es equivalente al trabajo realizado
 por la fuerza externa
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=u= \int_{0}^{h}mgdx= mgh"><img src="http://www.alciro.org/cgi/tex.cgi?u= \int_{0}^{h}mgdx= mgh" title="u= \int_{0}^{h}mgdx= mgh" border="0" /></a>
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=E_p = \frac{1}{2} \cdot k \cdot x^2
+"><img src="http://www.alciro.org/cgi/tex.cgi?E_p = \frac{1}{2} \cdot k \cdot x^2
+" title="E_p = \frac{1}{2} \cdot k \cdot x^2
+" border="0" /></a>
 ## Energía cinética
 • La energía cinética es debida a la velocidad
 • Solamente los elementos de inercia pueden almacenar
 energía cinética
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=\tau \equiv \frac{1}{2}mv^{2}"><img src="http://www.alciro.org/cgi/tex.cgi?\tau \equiv \frac{1}{2}mv^{2}" title="\tau \equiv \frac{1}{2}mv^{2}" border="0" /></a>
-
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=E_c = \frac{1}{2} \cdot m \cdot v^2
+"><img src="http://www.alciro.org/cgi/tex.cgi?E_c = \frac{1}{2} \cdot m \cdot v^2
+" title="E_c = \frac{1}{2} \cdot m \cdot v^2
+" border="0" /></a>
 ## Potencia
 • La realización de trabajo que varía con respecto al
 tiempo
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=potencia = p\equiv \frac{dw}{dt}"><img src="http://www.alciro.org/cgi/tex.cgi?potencia = p\equiv \frac{dw}{dt}" title="potencia = p\equiv \frac{dw}{dt}" border="0" /></a>
-## Energía potencial en un resor
-Es todo lo físico que permite que se lleve a cabo un proceso Puede ser representado matemáticamente 
-Puede ser representado a través de uno o varios sistemas
-### 3.1. PROCESO 
-• Es la secuencia de pasos que permite el desarrollo, o fabricación de un objetivo o producto
-• En el área de control se usa como sinónimo de planta
-(Aunque en sentido estricto no lo son)
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=P = T \cdot \omega
+"><img src="http://www.alciro.org/cgi/tex.cgi?P = T \cdot \omega
+" title="P = T \cdot \omega
+" border="0" /></a>
+## Energía potencial en un resorte
+Es el trabajo neto hecho sobre él por las fuerzas que
+actúan en sus extremos cuando es comprimido o estirado
+• De forma general el cambio de energía sería:
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=E_p = \frac{1}{2} \cdot k \cdot x^2
+"><img src="http://www.alciro.org/cgi/tex.cgi?E_p = \frac{1}{2} \cdot k \cdot x^2
+" title="E_p = \frac{1}{2} \cdot k \cdot x^2
+" border="0" /></a>
+### Potencia en un resorte 
+• Potencia requerida para estirar o comprimir un resorte
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=P = -k \cdot x \cdot v
+"><img src="http://www.alciro.org/cgi/tex.cgi?P = -k \cdot x \cdot v
+" title="P = -k \cdot x \cdot v
+### Potencia en una masa
+• La potencia requerida para acelerar una masa en línea
+recta
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=P = m \cdot a \cdot v
+"><img src="http://www.alciro.org/cgi/tex.cgi?P = m \cdot a \cdot v
+" title="P = m \cdot a \cdot v
+" border="0" /></
 
-### 3.2.Modelos dinámicos
-En control interesa obtener un modelo matemático que relacione las variables de interés con el tiempo
-Hay cambios de la variable con respecto al tiempo  
-Es necesario cuantificar cuanto cambia las variables de
-interés con respecto al tiempo
+### Energía disipada
+• La energía disipada en un amortiguador corresponde al
+trabajo neto realizado sobre este
 
-### 3.3. Recordando cálculo diferencial
-Definición de la derivada
-![Texto alternativo](https://tse4.mm.bing.net/th?id=OIP.-LuSWG5JSTpbRCnBwK-gtQHaE2&pid=Api&P=0&h=180)
+### Potencia disipada en amortiguador
+• La potencia disipada en el amortiguador de cilindro es:
 
-### 3.4. Sistemas lineales y no lineales
-• Un Sistema se considera lineal cuando cumple con el principio
-de superposición
-• La respuesta de un Sistema al que se le aplican 2 o más
-excitaciones simultáneas, es la suma de las respuestas
-individuales
-• Un Sistema lineal Tambien tiene la característica de
-proporcionalidad entre la entrada y la salida
-• Los sistemas no lineales no cumplen con el principio de
-superposición
-• Los sistemas no lineales se linealizan en un punto de
-operación, en el cual se cumple el principio de superposición
-
-### 3.5. Influencia de parámetros
-![Texto alternativo](https://ecuaciondiferencialejerciciosresueltos.com/wp-content/uploads/2020/09/InterseccionIntegralesImpropias.png)
-
-### 3.6. Transformada Inversa de Laplace
-La Transformada Inversa de Laplace nos permite recuperar funciones en el dominio del tiempo a partir de su expresión en el dominio de la frecuencia. Se puede calcular con tablas, fracciones parciales o el método del residuo.
-![Texto alternativo](https://i.ytimg.com/vi/Tjsv03Lvnoc/maxresdefault.jpg)
+### Conservación de energía
+• Es posible obtener el modelo matemático considerando
+que la energía total de un sistema permanece igual si
+ninguna energía entra o sale del sistema
+• En los sistemas mecánicos la fricción disipa energía en
+forma de calor
+• Los sistemas que ni incluyen fricción se denominan
+sistemas conservativos
 
 
+### Sistema conservativo
+• Toda la energía (cinética y potencial) sale del sistema en
+forma de trabajo mecánico. No se disipa energía
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=E_{\text{inicial}} = E_{\text{final}}
+"><img src="http://www.alciro.org/cgi/tex.cgi?E_{\text{inicial}} = E_{\text{final}}
+" title="E_{\text{inicial}} = E_{\text{final}}
+" border="0" /></a>
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=E_{\text{inicial}} = 0 + m \cdot g \cdot h
+"><img src="http://www.alciro.org/cgi/tex.cgi?E_{\text{inicial}} = 0 + m \cdot g \cdot h
+" title="E_{\text{inicial}} = 0 + m \cdot g \cdot h
+" border="0" /></a>
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=m \cdot g \cdot h = \frac{1}{2} \cdot m \cdot v^2
+g \cdot h = \frac{1}{2} \cdot v^2
+2 \cdot g \cdot h = v^2
+v = \sqrt{2 \cdot g \cdot h}
+"><img src="http://www.alciro.org/cgi/tex.cgi?m \cdot g \cdot h = \frac{1}{2} \cdot m \cdot v^2
+g \cdot h = \frac{1}{2} \cdot v^2
+2 \cdot g \cdot h = v^2
+v = \sqrt{2 \cdot g \cdot h}
+" title="m \cdot g \cdot h = \frac{1}{2} \cdot m \cdot v^2
+g \cdot h = \frac{1}{2} \cdot v^2
+2 \cdot g \cdot h = v^2
+v = \sqrt{2 \cdot g \cdot h}
+" border="0" /></a>
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=v = \sqrt{2 \cdot 9.8 \cdot 5} = \sqrt{98} \approx 9.9 \, \text{m/s}
+"><img src="http://www.alciro.org/cgi/tex.cgi?v = \sqrt{2 \cdot 9.8 \cdot 5} = \sqrt{98} \approx 9.9 \, \text{m/s}
+" title="v = \sqrt{2 \cdot 9.8 \cdot 5} = \sqrt{98} \approx 9.9 \, \text{m/s}
+" border="0" /></a>
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=v \approx 9.9 \, \text{m/s}
+"><img src="http://www.alciro.org/cgi/tex.cgi?v \approx 9.9 \, \text{m/s}
+" title="v \approx 9.9 \, \text{m/s}
+" border="0" /></a>
 ## 4. Ejemplo de la Transformada de Laplace
 Vamos a calcular la Transformada de Laplace de la función:
 ![Texto alternativo](http://3.bp.blogspot.com/-km_zgvgZ4LE/UYwaTwYkrrI/AAAAAAAAEaE/gNtEiCQIWto/s1600/INTEGRAL+DE+UNA+TRANSFORMADA+DE+LAPLACE+(2).gif)
