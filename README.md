@@ -5,10 +5,9 @@ de acuerdo a su posición (con respecto a una referencia)
 almacenan energía potencial
 • La energía potencial es equivalente al trabajo realizado
 por la fuerza externa
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=E_p = \frac{1}{2} \cdot k \cdot x^2
-"><img src="http://www.alciro.org/cgi/tex.cgi?E_p = \frac{1}{2} \cdot k \cdot x^2
-" title="E_p = \frac{1}{2} \cdot k \cdot x^2
-" border="0" /></a>
+
+<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=E_p = \frac{1}{2} \cdot k \cdot x^2"><img src="http://www.alciro.org/cgi/tex.cgi?E_p = \frac{1}{2} \cdot k \cdot x^2" title="E_p = \frac{1}{2} \cdot k \cdot x^2" border="0" /></a>
+
 ## Energía cinética
 • La energía cinética es debida a la velocidad
 • Solamente los elementos de inercia pueden almacenar
