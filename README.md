@@ -1,4 +1,5 @@
-#Función de transferencia
+### Función de transferencia
+
 La función de transferencia es una herramienta matemática que se usa principalmente en ingeniería de control y procesamiento de señales para describir cómo un sistema responde a una entrada. Representa la relación entre la salida y la entrada de un sistema lineal e invariante en el tiempo, en el dominio de la frecuencia (normalmente usando la transformada de Laplace)
 
 ![Función de transferencia](https://latex.codecogs.com/svg.image?H(s)=\frac{X(s)}{Y(s)})
