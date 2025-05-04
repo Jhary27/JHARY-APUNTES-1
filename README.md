@@ -1,13 +1,9 @@
-# Energía potencial
-• En los sistemas mecánicos la energía potencial cambia
-de acuerdo a su posición (con respecto a una referencia)
-• En los sistemas mecánicos los resortes y las masas
-almacenan energía potencial
-• La energía potencial es equivalente al trabajo realizado
-por la fuerza externa
-## formula
-<a href="http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp?eq=P_{avg} = V_{rms} \cdot I_{rms} \cdot \cos(\phi) ">
-<img src="http://www.alciro.org/cgi/tex.cgi?P_{avg} = V_{rms} \cdot I_{rms} \cdot \cos(\phi) " title="P_{avg} = V_{rms} \cdot I_{rms} \cdot \cos(\phi) " border="0" /></a>
+#Función de transferencia
+La función de transferencia es una herramienta matemática que se usa principalmente en ingeniería de control y procesamiento de señales para describir cómo un sistema responde a una entrada. Representa la relación entre la salida y la entrada de un sistema lineal e invariante en el tiempo, en el dominio de la frecuencia (normalmente usando la transformada de Laplace)
+![Función de transferencia](https://latex.codecogs.com/svg.image?H(s)=\frac{X(s)}{Y(s)})
+
+
+
 
 ## Energía cinética
 • La energía cinética es debida a la velocidad
