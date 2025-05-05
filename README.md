@@ -124,3 +124,61 @@ repentino
 
 ![image](https://github.com/user-attachments/assets/22657de5-566f-4d97-bbe0-a8873b79c3e8)
 
+### Modelamiento de sistemas condiagramas de bloques 
+### Modelos de sistemas complejos
+
+• Se podrían modelar sistemas como un todo hallando las
+funciones de transferencia de cada componente
+• Otro enfoque es utilizar modelos ya desarrollados
+ampliamente para construir modelos más complejos
+• Aún usando este enfoque hay muchos tipos de procesos
+y dispositivos
+
+## Solenoide 
+Un solenoide está formado por un circuito eléctrico, un acoplamiento electromecánico (transductor) y un
+sistema mecánico de traslación
+
+![Transfer Function](https://latex.codecogs.com/svg.image?L\frac{di}{dt}+Ri=v(t))
+
+![Transfer Function](https://latex.codecogs.com/svg.image?I(S)=V(S)\frac{1}{Ls+R})
+
+![image](https://github.com/user-attachments/assets/44b5a658-99c0-436b-89f7-99f6e8f02d43)
+
+## Solenoide
+• El electroimán produce una fuerza mecánica proporcional a la corriente en el embobinad
+
+![Transfer Function](https://latex.codecogs.com/svg.image?f_{s}=k_{s}i)
+
+![Transfer Function](https://latex.codecogs.com/svg.image?f_{s}=k_{s}i(s))
+
+![image](https://github.com/user-attachments/assets/44b5a658-99c0-436b-89f7-99f6e8f02d43)
+Acople entre la parte electromagnética y la parte mecánica
+
+## Solenoide
+• El electroimán atrae una masa acoplada por medio de un resorte y se considera el mortiguamiento dado por la
+envolvente de la bobina
+
+![Transfer Function](https://latex.codecogs.com/svg.image?m\frac{d^{2}x}{dt^{2}}+b\frac{dx}{dt}kx=f(t))
+
+![Transfer Function](https://latex.codecogs.com/svg.image?X(s)=F(s)\frac{1}{ms^{2}+bs+k})
+
+![image](https://github.com/user-attachments/assets/9f3f8513-754a-4ff3-b071-a53b9ded13ca)
+
+## Motor DC
+![image](https://github.com/user-attachments/assets/54de4187-1ba4-44bf-8ad6-094c63ec6bcb)
+
+## Motor DC (Corriente de campo)
+• Circuito electromagnético:
+![image](https://github.com/user-attachments/assets/07afb975-9d06-42aa-aacc-05f3af54f384)
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?L_{C}\frac{di_{c}}{dt}+R_{c}i_{c}=v_{c}(t))
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?I_{C}(s)=V_{c(s)}\frac{1}{(sL_{c}+R_{c})})
+
+![image](https://github.com/user-attachments/assets/44b5a658-99c0-436b-89f7-99f6e8f02d43)
+
+## Motor DC (Corriente de campo)
+• El flujo Φ en el entrehierro es proporcional a la corriente de campo
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\phi=K_{c}i_{c})
+ 
