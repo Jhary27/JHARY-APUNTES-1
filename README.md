@@ -169,6 +169,7 @@ envolvente de la bobina
 
 ## Motor DC (Corriente de campo)
 • Circuito electromagnético:
+
 ![image](https://github.com/user-attachments/assets/07afb975-9d06-42aa-aacc-05f3af54f384)
 
  ![Transfer Function](https://latex.codecogs.com/svg.image?L_{C}\frac{di_{c}}{dt}+R_{c}i_{c}=v_{c}(t))
@@ -188,11 +189,13 @@ envolvente de la bobina
  ![image](https://github.com/user-attachments/assets/8ef12ee9-4226-4a70-b18f-43cab8329d8f)
 
  ![Transfer Function](https://latex.codecogs.com/svg.image?&space;L_c\frac{di_c}{dt}+R_c&space;i_c=v_c(t))
+ 
   ![Transfer Function](https://latex.codecogs.com/svg.image?I_c(s)=V_c(s)\cdot\frac{1}{sL_c+R_c})
 
   ### Motor DC (Corriente de campo)
   • El torque aplicado (parte mecánica) a la carga se comporta como un Sistema rotacional clásico que
     considera la inercia y la fricción mecánica
+    
  ![Transfer Function](https://latex.codecogs.com/svg.image?J\frac{d^2\theta}{dt^2}+b\frac{d\theta}{dt}+k\theta=\tau(t))
  
   ![Transfer Function](https://latex.codecogs.com/svg.image?\Theta(s)=T_c(s)\cdot\frac{1}{s^2&space;J+bs})
@@ -201,6 +204,7 @@ envolvente de la bobina
 
   ### Motor DC (Corriente de campo) 
    La conexión de los modelos se realiza de la siguiente manera:
+   
  ![Transfer Function](https://latex.codecogs.com/svg.image?\Theta(s)=V_c(s)\cdot\frac{K_m}{(sL_c+R_c)(Js^2+bs)}-T_p(s)\cdot\frac{1}{Js^2+bs})
 
  ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{\Theta(s)}{V_c(s)}=\frac{K_m}{(sL_c+R_c)(Js^2+bs)})
@@ -208,10 +212,154 @@ envolvente de la bobina
  ![image](https://github.com/user-attachments/assets/f002f084-03f4-4c4a-9f26-274f8b609e2a)
 
  ### Motor DC (Corriente de armadura)
- El voltaje inducido en la armadura es proporcional a la velocidad angular del eje
-
-
-
-    
-
  
+ El voltaje inducido en la armadura es proporcional a la velocidad angular del eje
+ 
+ ![Transfer Function](https://latex.codecogs.com/svg.image?V_a(s)=(sL_a+R_a)I_a(s)+V_b(s))
+
+  ![Transfer Function](https://latex.codecogs.com/svg.image?V_b(s)=K_b\omega(s))
+  
+• Combinando estas ecuaciones se obtiene
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?I_a(s)=\frac{V_a(s)-K_b\omega(s)}{sL_a+R_a})
+
+ ![image](https://github.com/user-attachments/assets/575dbbfa-abf6-4b4a-8a1d-b4b37b8db810)
+
+ ### Elementos Transmisores de energía
+
+ ### Engranajes y Poleas
+Son dispositivos mecánicos que transmiten la energía desde una parte del sistema a otra
+
+![image](https://github.com/user-attachments/assets/1efb58ed-7476-4c1b-839f-043e281f0d89)
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{\tau_2}{\tau_1}=\frac{N_2}{N_1})
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\Theta(s)=V_c(s)\cdot\frac{K_m}{(sL_c+R_c)(Js^2+bs)}-T_p(s)\cdot\frac{1}{Js^2+bs})
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{\Theta(s)}{V_c(s)}=\frac{K_m}{(sL_c+R_c)(Js^2+bs)})
+  
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\beta_{\text{equiv}}=\left(\frac{N_1}{N_2}\right)^2\beta&space;)
+
+### Diagrama de bloques
+![image](https://github.com/user-attachments/assets/c2f2eaf0-dfc7-4d17-a1d1-ea2d424c374e)
+
+### Palancas
+
+![image](https://github.com/user-attachments/assets/ce8f388e-e7bc-43af-b12d-6bb537078892)
+
+![Transfer Function](https://latex.codecogs.com/svg.image?\frac{-f_2}{f_1}=\frac{d_1}{d_2}\quad\text{y}\quad\frac{d_1}{d_2}=\frac{-x_1}{x_2})
+
+### Potenciómetro de rotación
+
+![image](https://github.com/user-attachments/assets/b65e7473-c52d-4ac1-a610-6264a33d3eb2)
+
+![Transfer Function](https://latex.codecogs.com/svg.image?V_o=\frac{\theta}{\theta_{\text{m&space;x}}}V_{\alpha})
+
+![image](https://github.com/user-attachments/assets/461a88ff-9e68-4614-ad53-46e29ecb8405)
+
+### Tacómetros
+Son dispositivos que convierten la velocidad angular a voltaje
+
+![image](https://github.com/user-attachments/assets/47b314f1-b8a9-4b4c-bf5f-9127dcb8505f)
+
+![Transfer Function](https://latex.codecogs.com/svg.image?v(t)=k\frac{d\theta(t)}{dt})
+
+![Transfer Function](https://latex.codecogs.com/svg.image?G(s)=\frac{V(s)}{\Theta(s)}=ks&space;)
+
+### Sensores transmisores
+
+![image](https://github.com/user-attachments/assets/cdce7940-af06-4e6b-a4d6-e7895de024a2)
+
+• Si son lineales:
+• Si no son lineales:
+
+### Modelos de otros procesos
+
+• Sea un tanque lleno con ocho litros de agua salada en el cual están disueltos dos kg de sal. Una solución de salmuera (agua salada) con tres kg de sal por litro entra al
+tanque a una velocidad de 4 l/min, mientras la mezcla bien agitada sale a la misma velocidad con la que entra.
+
+
+![image](https://github.com/user-attachments/assets/9e54e54b-f26b-4283-89b8-cc1ab99c171d)
+
+### Sistema Térmico
+
+![image](https://github.com/user-attachments/assets/5c355eb3-16fb-418e-b5ee-be73f3147545)
+
+### Álgebra de Bloques
+Una herramienta que puede ayudar a entender un poco la interacción entre varios sistemas son los diagramas de
+bloques
+ Primer sistema de control J. Watt
+Para explicar su sistema empezó a desarrollar los diagramas de bloques
+
+![image](https://github.com/user-attachments/assets/4867f502-9fda-4cbd-9db6-5f1927526ce9)
+
+### Elementos de un diagrama de bloques
+
+• Bloque Funcional: es un símbolo para representar la operación matemática que sobre la señal de entrada
+hace el bloque para producir la salida
+
+![image](https://github.com/user-attachments/assets/a244b14f-f014-4a23-8b29-09d1ccaa3f47)
+
+### Elementos de un diagrama de bloques
+• Flechas: Representa las señales dentro del proceso. Obsérvese que la señal sólo puede pasar en la dirección
+de las flechas. Por tanto, un diagrama de bloques de un sistema de control muestra explícitamente una propiedad
+unilateral. La punta de flecha que señala el bloque indica la entrada, y la punta de flecha que se aleja del bloque
+representa la salida. Tales flechas se conocen como  señales
+
+![image](https://github.com/user-attachments/assets/1c94fe46-8e49-47ef-a646-316fabab18c0)
+
+### Elementos de un diagrama de bloques
+
+• Punto Suma: Realiza operaciones (suma o resta) entre señales únicamente. El signo más o el signo menos en
+cada punta de flecha indica si la señal debe sumarse o restarse. Es importante que las cantidades que se sumen
+o resten tengan las mismas dimensiones y las mismas unidades.
+
+![image](https://github.com/user-attachments/assets/9e551846-fb03-4088-aa17-8d5cf0e49122)
+
+### Ramificación
+• Un punto de ramificación es aquel a partir del cual la
+señal de un bloque va de modo concurrente a otros bloques o puntos de suma
+
+ ![image](https://github.com/user-attachments/assets/42df167e-c39b-4dd1-9512-9fe751702e94)
+
+### Interpretación del diagrama
+• La salida de un bloque funcional corresponde a la señal
+de entrada (Dominio s) multiplicada por por la función de transferencia del bloque.
+
+![image](https://github.com/user-attachments/assets/a1ba426e-e3ae-4c2d-bf1e-b10759dfadc8)
+
+### Bloques en cascada
+• Si se tienen 2 sistemas interconectados
+
+![image](https://github.com/user-attachments/assets/0d5d8f61-3a5f-44d3-a32c-e34872ac93cd)
+
+![image](https://github.com/user-attachments/assets/c3abe28d-6eed-47c1-9f86-3144b8f9b197)
+
+
+### Aplicación de un diagrama de bloques
+
+![image](https://github.com/user-attachments/assets/77567502-2dcb-432a-ae1b-32d218ca2728)
+
+![image](https://github.com/user-attachments/assets/413a288e-7a4f-4bea-8ae7-392fa9a23d22)
+
+### Algebra de bloques
+
+Utilizando algebra de bloques es posible obtener la función de transferencia de
+sistemas compuestos de varios bloques funcionales
+
+![image](https://github.com/user-attachments/assets/2e4bfbc3-2d08-49fe-be51-1d1e6aeb872f)
+
+### Lazo de realimentación positivo
+
+![image](https://github.com/user-attachments/assets/196eb20b-2ced-4860-bee1-8b2523d0c53a)
+
+### Reducción de diagramas
+
+### Aplicación algebra de bloques
+• Hallar la función de transferencia
+
+![image](https://github.com/user-attachments/assets/5cb30882-0090-4267-9c21-bd66ca639adc)
+
+### Aplicando algebra de bloques
+
+![image](https://github.com/user-attachments/assets/563e46b6-0a2f-4de0-96e1-d898e42fc77c)
