@@ -181,4 +181,37 @@ envolvente de la bobina
 • El flujo Φ en el entrehierro es proporcional a la corriente de campo
 
  ![Transfer Function](https://latex.codecogs.com/svg.image?\phi=K_{c}i_{c})
+
+ ## Motor DC (Corriente de campo)
+ • Circuito electromagnético:
+
+ ![image](https://github.com/user-attachments/assets/8ef12ee9-4226-4a70-b18f-43cab8329d8f)
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?&space;L_c\frac{di_c}{dt}+R_c&space;i_c=v_c(t))
+  ![Transfer Function](https://latex.codecogs.com/svg.image?I_c(s)=V_c(s)\cdot\frac{1}{sL_c+R_c})
+
+  ### Motor DC (Corriente de campo)
+  • El torque aplicado (parte mecánica) a la carga se comporta como un Sistema rotacional clásico que
+    considera la inercia y la fricción mecánica
+ ![Transfer Function](https://latex.codecogs.com/svg.image?J\frac{d^2\theta}{dt^2}+b\frac{d\theta}{dt}+k\theta=\tau(t))
+ 
+  ![Transfer Function](https://latex.codecogs.com/svg.image?\Theta(s)=T_c(s)\cdot\frac{1}{s^2&space;J+bs})
+
+  ![image](https://github.com/user-attachments/assets/419985a2-5e30-49cf-98ba-86836df5a011)
+
+  ### Motor DC (Corriente de campo) 
+   La conexión de los modelos se realiza de la siguiente manera:
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\Theta(s)=V_c(s)\cdot\frac{K_m}{(sL_c+R_c)(Js^2+bs)}-T_p(s)\cdot\frac{1}{Js^2+bs})
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{\Theta(s)}{V_c(s)}=\frac{K_m}{(sL_c+R_c)(Js^2+bs)})
+
+ ![image](https://github.com/user-attachments/assets/f002f084-03f4-4c4a-9f26-274f8b609e2a)
+
+ ### Motor DC (Corriente de armadura)
+ El voltaje inducido en la armadura es proporcional a la velocidad angular del eje
+
+
+
+    
+
  
