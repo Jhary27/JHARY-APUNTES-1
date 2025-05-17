@@ -509,8 +509,3 @@ sistema de primer orden tienne por lo menos un primer polo
 - calcular la pendiente de la zona
 
   <img width="156" alt="image" src="https://github.com/user-attachments/assets/6472f866-c0c9-4fc6-b377-26de4a47b1f1" />
-
-
-<img width="103" alt="image" src="https://github.com/user-attachments/assets/5ea00f96-4beb-4d85-8b24-3c12d88cac67" />
-
-  ![Transfer Function]()
