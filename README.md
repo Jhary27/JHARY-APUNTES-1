@@ -389,8 +389,6 @@ Pk: Ganancia de los caminos directos.
 
 ### EJEMPLO 
 
-<img width="134" alt="image" src="https://github.com/user-attachments/assets/7eef6699-db44-413d-a225-1d355f09c19b" />
-
 - trayectoria directa
    
 ![Transfer Function](P_1=1&plus;G_1,\quad&space;G_2&plus;G_2&plus;1=G_1&space;G_2&space;G_3&space;)
