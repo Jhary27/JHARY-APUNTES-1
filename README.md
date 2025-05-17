@@ -389,7 +389,7 @@ Pk: Ganancia de los caminos directos.
 
 ### EJEMPLO 
 
- <img width="269" alt="image" src="https://github.com/user-attachments/assets/6935e978-57a7-4714-a194-6a9938c29a1d" />
+<img width="134" alt="image" src="https://github.com/user-attachments/assets/7eef6699-db44-413d-a225-1d355f09c19b" />
 
 - trayectoria directa
    
