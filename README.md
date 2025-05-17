@@ -392,7 +392,7 @@ Pk: Ganancia de los caminos directos.
 <img width="134" alt="image" src="https://github.com/user-attachments/assets/fafcb2b2-4f5d-4e29-b7cd-1a83de9e11bc" />
 
 - trayectoria directa
-   
+
 ![Transfer Function](https://latex.codecogs.com/svg.imageP_1=1&plus;G_1,\quad&space;G_2&plus;G_2&plus;1=G_1&space;G_2&space;G_3&space;)
 
 - lazos cerrados
