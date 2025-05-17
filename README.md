@@ -410,3 +410,63 @@ Pk: Ganancia de los caminos directos.
 - funcion de tranferecia
 
 ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{C(s)}{R(s)}=\frac{P_1\Delta_1}{\Delta}=\frac{G_1&space;G_2&space;G_3}{G_2&space;G_3&space;H_1&plus;G_2&space;G_3&space;H_2&plus;G_1&space;G_3&space;H_1})
+
+### sistema  de primer orden 
+### ecuacion diferencial de primer orden 
+
+- la estructura general  de una ecuacion  de primer orden es
+  
+![Transfer Function](https://latex.codecogs.com/svg.image?a\dot{y}(t)&plus;b&space;y(t)=c&space;u(t))
+
+- hallando la funcion de tranferencia  tenemos, aplicada la transformada de la place
+
+![Transfer Function](https://latex.codecogs.com/svg.image?a&space;s&space;Y(s)&plus;b&space;Y(s)=c&space;U(s))
+
+- despejando la salida / entrada
+
+  ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{c}{as&plus;b})
+
+  ### sistema de primer orden
+  - las funciones de tranferencia provienen de unas ecuacion diferencial de priemro orden
+  - 
+  ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{c'}{as&plus;b})
+se obsrrva que los parametros constastes de la ecuacion diferencial tambien permanecen en la funciond e trasferencia
+
+-los parametros a,b y c son los parametrso fisicos del sistema que define la dinamica del sistema 
+
+### EJEMPLO 
+
+<img width="116" alt="image" src="https://github.com/user-attachments/assets/90bdc586-8f95-4fe4-9a6a-9afd023885d1" />
+
+  ![Transfer Function](https://latex.codecogs.com/svg.image?a&space;y(t)&plus;b&space;y(t)=c&space;u(t)\\[1ex])
+  
+  ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{c}{a&space;s&plus;b}\\[1ex])
+  
+  ![Transfer Function](vhttps://latex.codecogs.com/svg.image?a=R_1&space;A_1\quad&space;b=1\quad&space;c=R_1\\[1ex])
+  
+  ![Transfer Function](https://latex.codecogs.com/svg.image?R_1&space;A_1\frac{d&space;h_1}{dt}=R_1&space;q_i-h_1\\[1ex])
+ 
+  ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{H_1(s)}{Q_i(s)}=\frac{R_1}{R_1&space;A_1&space;s&plus;1})
+
+### Forma canonica de los sistemas de primer orden 
+
+![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{c}{as&plus;b}=\frac{\frac{c}{b}}{\frac{a}{b}s&plus;1})
+
+- esta forma permite idenficar  directemne los parametros del sistema
+-  para esto en control se prefiere  la forma cononica
+
+- la forma  canonica  conciderada:
+   
+![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{c}{as&plus;b}=\frac{\frac{c}{b}}{\frac{a}{b}s&plus;1})
+
+### ejemplo
+identidicar t y k  para el sisguiente sistema:
+
+![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{0.8}{s&plus;4})
+
+- no e sposible idenficar los parametros ya que no esta en la forma canonica por lo tanto:
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{0.8}{s&plus;4}=\frac{\frac{0.8}{4}}{\frac{s}{4}&plus;1}=\frac{0.2}{0.25s&plus;1}) 
+
+ - por lo tanto t = 0.25  segundos
+ - y k = 0,2 
