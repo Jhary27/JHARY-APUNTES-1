@@ -363,3 +363,50 @@ sistemas compuestos de varios bloques funcionales
 ### Aplicando algebra de bloques
 
 ![image](https://github.com/user-attachments/assets/563e46b6-0a2f-4de0-96e1-d898e42fc77c)
+
+### diagrama de flujo  de señales
+ Este tipo de diagramas permite otra formas  de representacion de sistemas mas complejos 
+ Se  utiliza  para obtener de una manera mas sencilla la funcion de transfericia total del sistema 
+
+<img width="161" alt="image" src="https://github.com/user-attachments/assets/9c807073-008b-4599-a2b6-39a39e9e1b0b" />
+
+### Deficion 
+- camino o trayectoria: es un recorrido de ramas conectadas en el sentido de la flechas de las ramas
+-  si no se cruza el nodo ams de una vez, el camino o trayectoria es abiero
+-  si el camino o la trayectoria finaliza  en el mismo nodo  de la cual partio, y no cruza ninguna otra mas y no cruza ninguno otro mas
+
+ <img width="123" alt="image" src="https://github.com/user-attachments/assets/01a27c84-8cce-461e-9697-593fd29d1483" />
+
+### Formula del maso 
+  
+![Transfer Function](https://latex.codecogs.com/svg.image?&space;P=\frac{1}{\Delta}\sum_i&space;P_i\Delta_i&space;) 
+
+Pk: Ganancia de los caminos directos.
+
+Δ = 1 – (suma de ganancias de los lazos) + (suma del producto de 2 lazos que no se tocan) – (suma del producto de 3 lazos que no se tocan) + …
+
+Δk = 1 – (suma de ganancias de los lazos que no toquen la trayectoria Pk) + (suma de productos de 2 lazos que no toquen la trayectoria Pk y no se toquen entre sí) – (suma de productos de 3 lazos que no toquen la trayectoria Pk y no se toquen entre sí) + 
+
+### EJEMPLO 
+
+ <img width="269" alt="image" src="https://github.com/user-attachments/assets/6935e978-57a7-4714-a194-6a9938c29a1d" />
+
+- trayectoria directa
+   
+![Transfer Function](P_1=1&plus;G_1,\quad&space;G_2&plus;G_2&plus;1=G_1&space;G_2&space;G_3&space;)
+
+- lazos cerrados
+  
+![Transfer Function](https://latex.codecogs.com/svg.image?L_1=G_2&space;G_3&space;H_1\\L_2=-G_2&space;G_3&space;H_2\\L_3=-G_1&space;G_3&space;H_1&space;)
+
+- Determinate
+
+![Transfer Function](https://latex.codecogs.com/svg.image?\Delta=1-(L_1&plus;L_2&plus;L_3))
+
+- cofactores 
+  
+![Transfer Function](https://latex.codecogs.com/svg.image?\Delta_1=1&space;)
+
+- funcion de tranferecia
+
+![Transfer Function](https://latex.codecogs.com/svg.image?\frac{C(s)}{R(s)}=\frac{P_1\Delta_1}{\Delta}=\frac{G_1&space;G_2&space;G_3}{G_2&space;G_3&space;H_1&plus;G_2&space;G_3&space;H_2&plus;G_1&space;G_3&space;H_1})
