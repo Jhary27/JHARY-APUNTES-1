@@ -469,4 +469,48 @@ identidicar t y k  para el sisguiente sistema:
  ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{0.8}{s&plus;4}=\frac{\frac{0.8}{4}}{\frac{s}{4}&plus;1}=\frac{0.2}{0.25s&plus;1}) 
 
  - por lo tanto t = 0.25  segundos
- - y k = 0,2 
+ - y k = 0,2
+
+   ### respuesta temporal de un sistema de primer orden
+   despejando la  salida para averiguar la resputas  se tiene
+
+   <img width="107" alt="image" src="https://github.com/user-attachments/assets/d58cb580-6bb6-4f1b-b68d-ed39fdeb67a3" />
+
+ ![Transfer Function](https://latex.codecogs.com/svg.image?Y(s)=\frac{U(s)K}{\tau&space;s&plus;1}=\frac{\frac{A}{s}\cdot&space;K}{\tau&space;s&plus;1})
+
+ ### respuesta  de un sistema de primer orden ante una entra de escalon 
+- aplicando  fraccion parciales
+
+- al aplica la transormada inversa de la place
+
+  ### respuesta grafica de un sistema de primer orden
+
+  <img width="115" alt="image" src="https://github.com/user-attachments/assets/1524dc37-b317-4e94-a9e2-b9119c894e39" />
+
+### constate del tiempo de un sistema 
+
+<img width="196" alt="image" src="https://github.com/user-attachments/assets/ac0849d2-f88e-4a4b-a64b-978460612955" />
+
+### ubicaciond e polos 
+sistema de primer orden tienne por lo menos un primer polo 
+
+### respuesta de rampa 
+
+### respuesta a una entrada de rampa 
+
+- al desarrollar las feracciones parciales
+
+### respuesta a la rampa unitaria 
+
+<img width="104" alt="image" src="https://github.com/user-attachments/assets/c4db9e0b-b207-4019-88c9-26abf8fcd57d" />
+
+### analisis dinamico de la respuesta de la rampa 
+
+- calcular la pendiente de la zona
+
+  <img width="156" alt="image" src="https://github.com/user-attachments/assets/6472f866-c0c9-4fc6-b377-26de4a47b1f1" />
+
+
+<img width="103" alt="image" src="https://github.com/user-attachments/assets/5ea00f96-4beb-4d85-8b24-3c12d88cac67" />
+
+  ![Transfer Function]()
