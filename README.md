@@ -513,19 +513,40 @@ sistema de primer orden tienne por lo menos un primer polo
 ### Ecuaciones diferenciales de Segundo orden
 
 • La estructura general de una ecuación de segundo
- orden es:
+ orden es: 
+ 
+ ![Transfer Function](https://latex.codecogs.com/svg.image?\ddot{y}(t)&plus;a_1\dot{y}(t)&plus;a_0&space;y(t)=b_0&space;u(t))
+ 
  Hallando la función de transferencia tenemos:
+ 
+ ![Transfer Function](https://latex.codecogs.com/svg.image?s^2&space;Y(s)&plus;a_1&space;s&space;Y(s)&plus;a_0&space;Y(s)=b_0&space;U(s))
+ 
  Aplicando transformada de LaPlace:
+
+  ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{b_0}{s^2&plus;a_1&space;s&plus;a_0})
+ 
   Despejando salida / Entrada
 
  ### Forma canónica de los sistemas de  segundo orden
+
+ 
+ ![Transfer Function](https://latex.codecogs.com/svg.image?G(s)=\frac{Y(s)}{U(s)}=\frac{b_0}{s^2&plus;a_1&space;s&plus;a_0})
+ 
   • Esta forma no permite identificar directamente los 
 parámetros temporales del sistema
  • Para esto en control se prefiere la forma canónica
 
  ### Forma canónica de los sistemas de  segundo orden
+
+  ![Transfer Function](https://latex.codecogs.com/svg.image?G(s)=\frac{Y(s)}{U(s)}=\frac{b_0}{s^2&plus;a_1&space;s&plus;a_0})
+  
   • La forma canónica considera lo siguiente:
+
+  ![Transfer Function](https://latex.codecogs.com/svg.image?a_1=2\zeta\omega_n\quad&space;a_0=\omega_n^2\quad&space;b_0=K\cdot\omega_n^2&space;)
+
    • Por lo tanto:
+
+   ![Transfer Function] (https://latex.codecogs.com/svg.image?G(s)=\frac{Y(s)}{U(s)}=\frac{K\cdot\omega_n^2}{s^2&plus;2\zeta\omega_n&space;s&plus;\omega_n^2})
 
  ### Parámetros de los sistemas de segundo orden
  𝐾𝑒𝑠𝑙𝑎 𝑔𝑎𝑛𝑎𝑛𝑐𝑖𝑎 𝑒𝑠𝑡á𝑡𝑖𝑐𝑎
