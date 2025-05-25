@@ -546,7 +546,7 @@ parámetros temporales del sistema
 
    • Por lo tanto:
 
-   ![Transfer Function] (https://latex.codecogs.com/svg.image?G(s)=\frac{Y(s)}{U(s)}=\frac{K\cdot\omega_n^2}{s^2&plus;2\zeta\omega_n&space;s&plus;\omega_n^2})
+   ![Transfer Function](https://latex.codecogs.com/svg.image?G(s)=\frac{Y(s)}{U(s)}=\frac{K\cdot\omega_n^2}{s^2&plus;2\zeta\omega_n&space;s&plus;\omega_n^2})
 
  ### Parámetros de los sistemas de segundo orden
  𝐾𝑒𝑠𝑙𝑎 𝑔𝑎𝑛𝑎𝑛𝑐𝑖𝑎 𝑒𝑠𝑡á𝑡𝑖𝑐𝑎
