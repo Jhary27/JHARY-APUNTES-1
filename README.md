@@ -508,4 +508,106 @@ sistema de primer orden tienne por lo menos un primer polo
 
 - calcular la pendiente de la zona
 
-  <img width="156" alt="image" src="https://github.com/user-attachments/assets/6472f866-c0c9-4fc6-b377-26de4a47b1f1" />
+  <img width="156" alt="image" src="https://gi thub.com/user-attachments/assets/6472f866-c0c9-4fc6-b377-26de4a47b1f1" />
+
+### Ecuaciones diferenciales de Segundo orden
+
+• La estructura general de una ecuación de segundo
+ orden es:
+ Hallando la función de transferencia tenemos:
+ Aplicando transformada de LaPlace:
+  Despejando salida / Entrada
+
+ ### Forma canónica de los sistemas de  segundo orden
+  • Esta forma no permite identificar directamente los 
+parámetros temporales del sistema
+ • Para esto en control se prefiere la forma canónica
+
+ ### Forma canónica de los sistemas de  segundo orden
+  • La forma canónica considera lo siguiente:
+   • Por lo tanto:
+
+ ### Parámetros de los sistemas de segundo orden
+ 𝐾𝑒𝑠𝑙𝑎 𝑔𝑎𝑛𝑎𝑛𝑐𝑖𝑎 𝑒𝑠𝑡á𝑡𝑖𝑐𝑎
+ 𝜔𝑛 𝑒𝑠𝑙𝑎 𝑓𝑟𝑒𝑐𝑢𝑒𝑛𝑐𝑖𝑎 𝑛𝑎𝑡𝑢𝑟𝑎𝑙 𝑑𝑒𝑙 𝑠𝑖𝑠𝑡𝑒𝑚𝑎
+ 𝜁 𝑒𝑠 𝑒𝑙 𝑓𝑎𝑐𝑡𝑜𝑟 𝑑𝑒 𝑎𝑚𝑜𝑟𝑡𝑖𝑔𝑢𝑎𝑚𝑖𝑒𝑛𝑡𝑜 𝑑𝑒𝑙 𝑠𝑖𝑠𝑡𝑒𝑚a
+
+ ### Respuesta de un Sistema de Segundo  ordena un escalón
+  • Factorizando:
+   • Aplicando escalón
+
+  ### Respuesta de un Sistema de Segundo  ordena un escalón
+
+ <img width="273" alt="image" src="https://github.com/user-attachments/assets/46e787b3-48ea-4a46-84f3-6a33b4931139" />
+
+### Respuesta de un Sistema de Segundo ordena un escalón
+
+<img width="224" alt="image" src="https://github.com/user-attachments/assets/924af8b2-d0da-401f-9ded-39a5e05e55ad" />
+
+### Respuesta de un Sistema de Segundo  ordena un escalón
+
+<img width="240" alt="image" src="https://github.com/user-attachments/assets/da1ac873-f024-4e9c-8e75-828d0da20908" />
+
+### Factor de amortiguamiento
+
+ 𝜁 >1
+ 𝜁 <1
+ 𝜁 =1
+ Sobre-amortiguado
+ Sub-amortiguado Críticamente amortiguado
+
+<img width="454" alt="image" src="https://github.com/user-attachments/assets/ee6a4c0c-edd9-45a4-a5f8-7f0a9cfc1052" />
+
+### Ubicación de polos
+
+𝜁 <1
+
+<img width="376" alt="image" src="https://github.com/user-attachments/assets/8ae09e86-0e34-4f64-8e48-2c4886f4443c" />
+
+ 𝜁 =1
+
+ <img width="374" alt="image" src="https://github.com/user-attachments/assets/d12f3909-0688-4ea5-82f0-a03675c969ae" />
+
+ 𝜁 >1
+
+ <img width="374" alt="image" src="https://github.com/user-attachments/assets/de17c267-d911-4fde-aaf4-e81fa755e02a" />
+
+### Parámetrostemporalesde los sistemas sub-amortiguados
+
+<img width="451" alt="image" src="https://github.com/user-attachments/assets/b6104845-9f9c-4256-a3b8-3a6acbcbab48" />
+
+### Tiempo de establecimiento en respuestas sub-amortiguadas
+
+<img width="430" alt="image" src="https://github.com/user-attachments/assets/0102cc32-6278-454e-86dd-e63d5de2288e" />
+
+### Efecto de los zeros
+
+### Efecto de los zeros en un sistema
+
+• Los efectos de los zeros se ven directamente en el estados
+ transitorio del Sistema
+ • El estado estacionarion no se vé afectado
+
+ • Aplicando fracciones parciales:
+
+ ### Efecto de los zeros
+
+ <img width="413" alt="image" src="https://github.com/user-attachments/assets/ca157e6a-e83c-485f-ab78-7bc14df54a5a" />
+
+### Tiempo muerto
+• En el dominio del tiempo, el tiempo muerto se interpreta
+ comoun corrimiento de la función hacia la derecho que 
+indica que se demora en empezar la función
+ Por ejemplo:
+ Si f(t) es la función de posición de una partícula pero esa
+ posición tiene un retardo de to entonces
+ matemáticamente se podría representar como f(t-to)
+
+### Tiempo muerto en el dominio “s”
+• Al aplicar transformada de LaPlace a un desplazamiento
+ en el tiempo lo que se obtiene es una función
+ exponencial así:
+
+ Esta es otra propiedad de la transformada de LaPlace que 
+lleva a escribir un sistema con tiempo muerto como:
+
