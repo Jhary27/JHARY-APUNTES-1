@@ -22,6 +22,11 @@ n>m impropia
 m>n estrictamente propia
 n=m bipropia
 
+### Ejemplo 
+
+<img width="626" alt="image" src="https://github.com/user-attachments/assets/1cdebdbc-448f-4b56-81be-d489634625f5" />
+
+
 ## Zeros de una función de transferencia
 • Si se iguala N(s) a 0 se obtienen los valores de “s” que
 cumplen con la condición
@@ -83,6 +88,9 @@ se pueden ubicar en un plano cartesiano
 por su orden o grado
 • Esto lo define el polinomio característisco
 
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/a69584b4-01f0-4445-8a35-29ad0ef457a8" />
+
+
 ## Teorema del valor final
 • El error en estado estacionario corresponde al error
 medido en 𝑡 = ∞
@@ -97,6 +105,34 @@ saber el valor final del error
 ![Transfer Function](https://latex.codecogs.com/svg.image?=\frac{5}{2})
 
 ![image](https://github.com/user-attachments/assets/57843cae-2dda-4049-aaaa-febdda9b5977)
+
+## codigo 
+clc;
+clc;
+clear;
+close all;
+
+% Parámetros
+t = 0:0.1:45;        % Tiempo de simulación
+y = zeros(size(t));  % Inicializar salida
+dt = t(2) - t(1);     % Paso de tiempo
+u = ones(size(t));   % Entrada escalón
+
+% Simulación por método de Euler
+for k = 1:length(t)-1
+    dy = (4*u(k) - y(k)) / 5;     % Derivada según la ecuación
+    y(k+1) = y(k) + dy * dt;      % Integración por pasos
+end
+
+% Graficar resultado
+plot(t, y, 'b', 'LineWidth', 2);
+grid on;
+title('Respuesta al Escalón ');
+xlabel('Tiempo (s)');
+ylabel('Salida y(t)');
+
+<img width="374" alt="image" src="https://github.com/user-attachments/assets/2a7d143c-861a-4ba1-a113-40405b506ff2" />
+
 
 ### Respuesta de un sistema
 • Sería necesario modelar cada Sistema desde cero
@@ -316,6 +352,10 @@ o resten tengan las mismas dimensiones y las mismas unidades.
 
 ![image](https://github.com/user-attachments/assets/9e551846-fb03-4088-aa17-8d5cf0e49122)
 
+### Tabla de bloques 
+
+<img width="198" alt="image" src="https://github.com/user-attachments/assets/69169705-7ed2-4a73-b079-2fa101cd6fa1" />
+
 ### Ramificación
 • Un punto de ramificación es aquel a partir del cual la
 señal de un bloque va de modo concurrente a otros bloques o puntos de suma
@@ -486,10 +526,125 @@ identidicar t y k  para el sisguiente sistema:
   ### respuesta grafica de un sistema de primer orden
 
   <img width="115" alt="image" src="https://github.com/user-attachments/assets/1524dc37-b317-4e94-a9e2-b9119c894e39" />
+  
+  ### codigo
+  % Parámetros
+AK = 1;
+tau = 1;
+
+% Tiempo
+t = linspace(0, 5, 500);
+
+% Respuesta al escalón unitario
+y = AK * (1 - exp(-t / tau));
+
+% También graficamos -exp(-t)
+y_neg_exp = -exp(-t);
+
+% Gráfica
+figure;
+plot(t, y, 'b', 'LineWidth', 2); hold on;
+plot(t, y_neg_exp, '--k', 'LineWidth', 1.5);
+grid on;
+xlabel('tiempo (segundos)');
+ylabel('Amplitud');
+title('Respuesta al escalón unitario de un sistema de primer orden');
+legend('y = 1 - exp(-t)', '-exp(-t)');
+
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/8df10689-e95b-4d23-ab26-891872c777cf" />
+
+### RESPUESTA NATURAL Y FORZADA DE UN SISTEMA DE PRIMER ORDEN
+
+% Tiempo de simulación
+t = 0:0.01:10; % desde 0 hasta 10 segundos con paso de 0.01
+
+% Entrada escalón unitario
+r = ones(size(t));
+
+% Respuesta del sistema: y(t) = 1 - exp(-t)
+y = 1 - exp(-t);
+
+% Crear figura
+figure;
+plot(t, r, 'k', 'LineWidth', 1.5); % Entrada escalón (r(t))
+hold on;
+plot(t, y, 'k', 'LineWidth', 1.5); % Respuesta del sistema (y(t))
+
+% Línea vertical en t = 5
+xline(5, 'k--');
+
+% Anotaciones
+text(1, 0.5, 'y(t) = 1 - exp(-t)', 'FontSize', 10);
+text(6.2, 1.02, 'r(t) = 1', 'FontSize', 10);
+
+% Etiquetas y títulos
+xlabel('tiempo (segundos)');
+ylabel('Amplitud');
+title('Régimen transitorio (natural) y de estado estable (forzado)');
+
+% Ajuste de ejes
+axis([0 10 0 1.2]);
+grid on;
+
+% Anotaciones adicionales
+text(1.5, -0.1, 'Régimen transitorio', 'FontSize', 10);
+text(6.5, -0.1, 'Régimen de estado estable', 'FontSize', 10);
+
+% Opcional: eliminar borde superior para estilo similar
+box off;
+
+<img width="449" alt="image" src="https://github.com/user-attachments/assets/39fb7870-b571-46d7-866d-3b071a3847ae" />
 
 ### constate del tiempo de un sistema 
 
 <img width="196" alt="image" src="https://github.com/user-attachments/assets/ac0849d2-f88e-4a4b-a64b-978460612955" />
+
+### codigo 
+
+A = 1;      % Amplitud del escalón
+K = 1;      % Ganancia
+tau = 1;    % Constante de tiempo
+
+t = 0:0.01:6*tau;
+y = A*K*(1 - exp(-t/tau));
+
+
+figure;
+plot(t, y, 'k', 'LineWidth', 1.5);
+hold on;
+
+% Marcar los puntos en t = n*tau (n=1..6)
+tau_vals = tau*(1:6);
+y_vals = A*K*(1 - exp(-tau_vals/tau));
+plot(tau_vals, y_vals, 'ko', 'MarkerFaceColor', 'r');
+
+
+y_percent = [0.632, 0.865, 0.950, 0.982, 0.993, 0.9975]*A*K;
+for i = 1:6
+    plot([0 tau_vals(i)], [y_vals(i) y_vals(i)], 'k--');
+    plot([tau_vals(i) tau_vals(i)], [0 y_vals(i)], 'k--');
+end
+
+
+for i = 1:6
+    text(tau_vals(i), y_vals(i) + 0.03, ...
+        sprintf('%.1f%%', y_percent(i)*100), ...
+        'FontSize', 9, 'HorizontalAlignment', 'left');
+end
+
+xlabel('t (segundos)');
+ylabel('y(t)');
+title('Respuesta de sistema de primer orden a entrada escalón');
+grid on;
+axis([0 6*tau 0 1.1*A*K]);
+
+% Tabla en consola
+T = tau*(1:6)';
+Y = y_vals';
+tabla = table(T, Y, 'VariableNames', {'t', 'Y(t)'});
+disp(tabla);
+
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/c567ff42-dc72-4fa1-a27f-204c2612b550" />
 
 ### ubicaciond e polos 
 sistema de primer orden tienne por lo menos un primer polo 
@@ -510,6 +665,54 @@ sistema de primer orden tienne por lo menos un primer polo
 
   <img width="156" alt="image" src="https://gi thub.com/user-attachments/assets/6472f866-c0c9-4fc6-b377-26de4a47b1f1" />
 
+  ### codigo
+  % Parámetros
+A = 1;
+K = 1;
+tau = 1;
+
+% Vector de tiempo para graficar
+t = 0:0.01:6*tau;
+
+% Entrada rampa
+r = t;
+
+% Respuesta del sistema a entrada rampa
+c = A*K*(t - tau + tau*exp(-t/tau));
+
+% Gráfica
+figure;
+plot(t, r, 'k--', 'LineWidth', 1.5); hold on;
+plot(t, c, 'k', 'LineWidth', 1.5);
+xlabel('t');
+ylabel('r(t), c(t)');
+title('Respuesta de un sistema de primer orden a una entrada rampa');
+legend('Entrada rampa r(t) = t', 'Salida c(t)');
+grid on;
+
+% Evaluar en múltiplos de tau
+T = tau * (1:6)';
+Y = (T + tau * exp(-T/tau)) * A * K;
+
+% Mostrar tabla en consola
+tabla = table(T, Y, 'VariableNames', {'t', 'Y(t)'});
+disp(tabla);
+
+% Dibujar puntos y etiquetas
+plot(T, Y, 'ro', 'MarkerFaceColor', 'r');
+for i = 1:length(T)
+    text(T(i), Y(i)+0.2, sprintf('%.2f', Y(i)), 'FontSize', 9, ...
+        'HorizontalAlignment', 'center');
+end
+
+% Cálculo de pendiente en zona lineal
+m = (4*tau + tau*exp(-4)) * A * K - (3*tau + tau*exp(-3)) * A * K;
+m = m / (tau); % ya que (5t - 4t) = t
+fprintf('Pendiente en la zona lineal: m = %.4f\n', m);
+
+<img width="433" alt="image" src="https://github.com/user-attachments/assets/9a096d97-6eab-4f67-b823-f207ba7ee835" />
+
+
 ### Ecuaciones diferenciales de Segundo orden
 
 • La estructura general de una ecuación de segundo
@@ -524,13 +727,12 @@ sistema de primer orden tienne por lo menos un primer polo
  Aplicando transformada de LaPlace:
 
   ![Transfer Function](https://latex.codecogs.com/svg.image?\frac{Y(s)}{U(s)}=\frac{b_0}{s^2&plus;a_1&space;s&plus;a_0})
- 
+
   Despejando salida / Entrada
 
  ### Forma canónica de los sistemas de  segundo orden
 
- 
- ![Transfer Function](https://latex.codecogs.com/svg.image?G(s)=\frac{Y(s)}{U(s)}=\frac{b_0}{s^2&plus;a_1&space;s&plus;a_0})
+  ![Transfer Function](https://latex.codecogs.com/svg.image?G(s)=\frac{Y(s)}{U(s)}=\frac{b_0}{s^2&plus;a_1&space;s&plus;a_0})
  
   • Esta forma no permite identificar directamente los 
 parámetros temporales del sistema
@@ -632,3 +834,26 @@ indica que se demora en empezar la función
  Esta es otra propiedad de la transformada de LaPlace que 
 lleva a escribir un sistema con tiempo muerto como:
 
+
+ ### Conclusiones 
+ Modelado de Sistemas Dinámicos:
+Las ecuaciones diferenciales de segundo orden con coeficientes constantes son fundamentales para representar una amplia variedad de sistemas físicos, ya sean mecánicos, eléctricos, térmicos, entre otros. Su transformación al dominio de Laplace facilita el análisis algebraico y permite obtener la función de transferencia, que es una herramienta clave para estudiar y predecir la respuesta del sistema ante diversas entradas.
+
+Respuesta al Escalón y a la Rampa:
+En sistemas de primer orden, la respuesta a una señal escalón se caracteriza por un crecimiento exponencial que converge a un valor estable. Por otro lado, la respuesta a una entrada en rampa presenta una fase transitoria seguida de una etapa lineal, cuya pendiente corresponde al producto que facilita la estimación precisa de la ganancia del sistema.
+
+Importancia de la Transformada de Laplace:
+La transformada de Laplace convierte las ecuaciones diferenciales en ecuaciones algebraicas, lo que simplifica enormemente el manejo de sistemas complejos. Además, esta herramienta permite obtener fácilmente la respuesta en frecuencia, realizar análisis de estabilidad y diseñar controladores de manera eficiente.
+
+Representación mediante Diagramas de Bloques:
+Los diagramas de bloques ofrecen una representación visual clara de la dinámica interna del sistema, mostrando las relaciones entre entradas, salidas y señales intermedias. Esto facilita el análisis mediante operaciones de álgebra de bloques, simplificando la comprensión y manipulación de sistemas complejos.
+
+Regla de Mason:
+La regla de Mason es una técnica poderosa para calcular la función de transferencia en sistemas complejos que incluyen múltiples trayectorias y lazos de realimentación. Gracias a esta regla, es posible obtener una expresión algebraica general que relaciona la salida con la entrada, evitando la necesidad de simplificar manualmente el diagrama de bloques.
+
+### Referencia 
+- Ogata, K. (2010). Ingeniería de Control Moderna (5ª ed.). Pearson Educación.
+- Dorf, R. C., & Bishop, R. H. (2011). Modern Control Systems (12th ed.). Prentice Hall.
+- MathWorks. (2023). MATLAB & Simulink Documentation. Recuperado de: https://www.mathworks.com/help/
+- Franklin, G. F., Powell, J. D., & Emami-Naeini, A. (2015). Feedback Control of Dynamic Systems (7th ed.). Pearson.
+- Lathi, B. P. (2005). Linear Systems and Signals (2ª ed.). Oxford University Press.
